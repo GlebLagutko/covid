@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SelectPeriod renders correctly 1`] = `
+<div>
+  <select>
+    <option
+      value="Year"
+    >
+      Year
+    </option>
+    )
+    <option
+      value="OneDay"
+    >
+      OneDay
+    </option>
+    )
+  </select>
+</div>
+`;

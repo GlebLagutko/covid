@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table renders correctly 1`] = `
+<div>
+  <div
+    class="table "
+  >
+    <select>
+      <option
+        value="All"
+      >
+        All
+      </option>
+    </select>
+    <select>
+      <option
+        value="Year"
+      >
+        Year
+      </option>
+      )
+      <option
+        value="OneDay"
+      >
+        OneDay
+      </option>
+      )
+    </select>
+    <div
+      class="table-cell"
+    >
+      1000
+      <span
+        class="text-table"
+      >
+        cases
+      </span>
+    </div>
+    <div
+      class="table-cell deaths"
+    >
+      10
+      <span
+        class="text-table"
+      >
+        deaths
+      </span>
+    </div>
+    <div
+      class="table-cell recovered"
+    >
+      0
+      <span
+        class="text-table"
+      >
+        recovered
+      </span>
+    </div>
+  </div>
+</div>
+`;
