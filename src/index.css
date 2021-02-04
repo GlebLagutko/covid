@@ -1,13 +1,155 @@
+
+* {
+    color: black;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+    display: flex;
+    justify-content: center;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+.list {
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    background-color: #262232;
+    overflow-x: hidden;
+    margin: 0px;
+}
+
+
+.list-item {
+    color: white;
+    width: 100%;
+    list-style-type: none;
+    box-sizing: border-box;
+    border: solid 1px black;
+    background-color: #262232;
+    padding-left: 10px;
+}
+
+span {
+    color: red
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+    background-color: #262232;
+    height: 45%;
+
+}
+
+.list-div {
+    background-color: #262232;;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    height: 50%;
+}
+
+input {
+    background: #F2F1F9;
+    border: none;
+    padding: 0.5rem;
+    width: 95%;
+}
+
+
+.text-table {
+    font-size: 16px;
+    color: #B17E32;
+
+}
+
+.table-cell {
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.deaths {
+    color: red;
+}
+
+.recovered {
+    color: green;
+}
+
+.marker {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: red;
+    border-radius: 100%;
+    user-select: none;
+}
+
+.chart-div {
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #262232;
+}
+
+GoogleMap {
+    width: 100%;
+    height: 50%;
+}
+
+.container {
+    display: flex;
+    width: 98vw !important;
+    justify-content: space-between;
+    height: 100vh !important;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    column-gap: 10px;
+}
+
+.center {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+select {
+    margin-top: 20px;
+}
+
+input {
+
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+}
+
+header {
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: gray;
 }

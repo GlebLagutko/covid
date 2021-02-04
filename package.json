@@ -1,38 +1,53 @@
 {
-  "name": "covid",
+  "name": "react-enterprise",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.0",
+    "node-fetch": "^2.6.1",
+    "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.1",
-    "web-vitals": "^0.2.4"
+    "react-google-maps": "^9.4.5",
+    "react-scripts": "4.0.0",
+    "react-vis": "^1.11.7"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-react": "^7.12.5",
+    "@google/markerclusterer": "^2.0.9",
+    "@react-google-maps/api": "^2.1.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@types/googlemaps": "^3.43.2",
+    "@types/jest": "^24.0.25",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-recharts": "^1.2.1",
+    "bootstrap": "^4.6.0",
+    "css-loader": "^5.0.1",
+    "geojson-world-map": "0.0.2",
+    "google-map-react": "^2.1.9",
+    "google-maps": "^4.3.3",
+    "google-maps-react": "^2.0.6",
+    "hooks": "^0.3.2",
+    "html-webpack-plugin": "^4.5.0",
+    "leaflet": "^1.7.1",
+    "lib": "^4.3.2",
+    "mapbox-gl": "^2.0.1",
+    "mapbox-gl-leaflet": "0.0.14",
+    "react-bootstrap": "^1.4.3",
+    "react-leaflet": "^3.0.5",
+    "react-simple-maps": "^2.3.0",
+    "react-test-renderer": "^17.0.1",
+    "recharts": "^2.0.3",
+    "scss": "^0.2.4",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.4.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production"
   }
 }

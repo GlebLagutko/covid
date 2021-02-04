@@ -1,17 +1,30 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import React from "react";
+import ReactDOM from "react-dom";
+
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import List from "./List";
+import Chart from "./Chart";
+import CovidMap from "./Map";
+import Table from "./Table";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+const App = () => {
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+ /*    <Table/>
+            <CovidMap/>  */
+
+    return (
+        <div className='container'>
+        <div className='left'>
+            <List/>
+            <Table/>
+        </div>
+            <div className='center'>
+                <CovidMap/>
+                <Chart/>
+            </div>
+        </div>
+    );
+};
+
+ReactDOM.render(<App/>, document.querySelector("#root"));
